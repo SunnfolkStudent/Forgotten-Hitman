@@ -9,17 +9,19 @@ public class FadeScreenScript : MonoBehaviour
     public AudioClip wakeupSFX;
     private AudioSource _AudioSource;
 
+    
+
 
     private void Start()
     {
         _AudioSource = GetComponent<AudioSource>();
         _AudioSource.PlayOneShot(wakeupSFX);
-        
-        FadeIn();
+        Invoke("FadeIn", wakeupSFX.length + 0.1f);
+
+
+
     }
-    
-    // make it play the fade in when the wakeupSFX is done playing
-    
+
     public void FadeIn()
     {
         FadeScreen.GetComponent<Animation>().Play("Fade Animation");
