@@ -47,19 +47,19 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""Look"",
-                    ""type"": ""Value"",
+                    ""type"": ""PassThrough"",
                     ""id"": ""6f5274f3-83d0-4e02-ab1f-fe79b9372f84"",
                     ""expectedControlType"": ""Vector2"",
-                    ""processors"": ""StickDeadzone"",
+                    ""processors"": """",
                     ""interactions"": """",
-                    ""initialStateCheck"": true
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""fab0856e-4121-4093-9fd4-759aa90423fb"",
-                    ""path"": ""<VirtualMouse>/leftButton"",
+                    ""path"": ""<Mouse>/leftButton"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -212,8 +212,8 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""b748e248-73ec-4384-8b32-78c1213519ee"",
-                    ""path"": ""<Gamepad>/rightStick"",
+                    ""id"": ""bf187ba0-153a-47bd-a11e-0f7fe4a79a95"",
+                    ""path"": ""<Pointer>/delta"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -223,10 +223,10 @@ public partial class @PlayerInputActions : IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""bf187ba0-153a-47bd-a11e-0f7fe4a79a95"",
-                    ""path"": ""<VirtualMouse>/delta"",
+                    ""id"": ""b748e248-73ec-4384-8b32-78c1213519ee"",
+                    ""path"": ""<Gamepad>/rightStick"",
                     ""interactions"": """",
-                    ""processors"": """",
+                    ""processors"": ""StickDeadzone"",
                     ""groups"": """",
                     ""action"": ""Look"",
                     ""isComposite"": false,
