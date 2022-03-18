@@ -302,5 +302,10 @@ MonoBehaviour:
   showerLayer:
     serializedVersion: 2
     m_Bits: 64
+  TvLayer:
+    serializedVersion: 2
+    m_Bits: 128
   _Input: {fileID: 4780713370472060646}
   interactCrossHair: {fileID: 0}
+  hasInteractedWithShower: 0
+  hasInteractedWithTV: 0

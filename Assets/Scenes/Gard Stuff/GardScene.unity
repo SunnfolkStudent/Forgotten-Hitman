@@ -616,14 +616,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1225854174, guid: 9cfc51b3bcf27314fb0a8cb7dbb4bc89, type: 3}
-      propertyPath: TVlayer.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 1225854174, guid: 9cfc51b3bcf27314fb0a8cb7dbb4bc89, type: 3}
-      propertyPath: TvLayer.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 1225854174, guid: 9cfc51b3bcf27314fb0a8cb7dbb4bc89, type: 3}
       propertyPath: interactCrossHair
       value: 
       objectReference: {fileID: 1077931073}
