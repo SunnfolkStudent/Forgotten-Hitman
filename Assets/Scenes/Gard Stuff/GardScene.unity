@@ -803,8 +803,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -223.11658, y: -172.2}
-  m_SizeDelta: {x: -734, y: -344}
+  m_AnchoredPosition: {x: -6.4079, y: -11.2712}
+  m_SizeDelta: {x: 401.8619, y: 499.4915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1051562902
 MonoBehaviour:
@@ -1289,9 +1289,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FadeScreen: {fileID: 184816074}
-  wakeupSFX: {fileID: 8300000, guid: 8a00145fbc4f15142b0f3860ca4eba41, type: 3}
+  wakeupSFX: {fileID: 8300000, guid: e804952c7d86ca442bb23c7a044ab712, type: 3}
   FadeOutScreen: {fileID: 147097871}
-  showerSFX: {fileID: 8300000, guid: 8a00145fbc4f15142b0f3860ca4eba41, type: 3}
+  showerSFX: {fileID: 8300000, guid: 747e51fd49d36434cb3b381564bcc366, type: 3}
   BlackScreen: {fileID: 1051562900}
   _InteractScript: {fileID: 1225854174}
 --- !u!82 &2015654215

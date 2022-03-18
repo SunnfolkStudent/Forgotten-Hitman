@@ -40,7 +40,7 @@ public class FadeScreenScript : MonoBehaviour
             Invoke("FadeOut", 0.1f);
             Invoke("ShowerFadeFix", 1.5f);
             BlackScreen.SetActive(false);
-            Invoke("FadeIn", showerSFX.length + 3f);
+            Invoke("FadeIn", showerSFX.length + 1f);
             showerloop = true;
         }
         
