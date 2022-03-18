@@ -8,17 +8,19 @@ public class AnimationController : MonoBehaviour
 
     private void Start() => _animator = GetComponent<Animator>();
 
-    private void PlayAnimation(int animationNum)
-    {
-        _animator.Play(_animations[animationNum]);
-    }
-
     public void Interacting()
     {
-        if (_animator.GetCurrentAnimatorStateInfo(0).IsName(_animations[0]) || _animator.GetCurrentAnimatorStateInfo(0).IsName(_animations[2]))
+        var info = _animator.GetCurrentAnimatorStateInfo(0);
+        
+        //Prevents changing animation until the current animation has ended
+        if (info.normalizedTime < 1) return;
+        
+        //Plays open animation
+        if (info.IsName(_animations[0]) || info.IsName(_animations[2]))
         {
             _animator.Play(_animations[1]);
         }
+        //Plays close animation
         else
         {
             _animator.Play((_animations[2]));
