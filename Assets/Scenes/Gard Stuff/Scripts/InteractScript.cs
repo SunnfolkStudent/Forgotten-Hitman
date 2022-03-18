@@ -8,13 +8,19 @@ public class InteractScript : MonoBehaviour
 
     [SerializeField] private float RaycastDistance = 10f;
     public LayerMask interactable;
+    public LayerMask showerLayer;
     private bool canInteract;
     public Input _Input;
     public GameObject interactCrossHair;
+    private bool canShowInteractCrosshair;
+    private bool canInteractWithShower;
+    [HideInInspector]public bool hasInteractedWithShower;
 
     private void Start()
     {
         canInteract = false;
+        hasInteractedWithShower = false;
+        canInteractWithShower = false;
         interactCrossHair.SetActive(false);
     }
 
@@ -22,7 +28,8 @@ public class InteractScript : MonoBehaviour
     {
         DetectInteractable();
         Interact();
-        
+        InteractShower();
+        ShowInteractCrosshair();
     }
 
     private void DetectInteractable()
@@ -31,12 +38,12 @@ public class InteractScript : MonoBehaviour
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, RaycastDistance, interactable))
         {
             canInteract = true;
-            interactCrossHair.SetActive(true);
+            canShowInteractCrosshair = true;
         }
         else
         {
             canInteract = false;
-            interactCrossHair.SetActive(false);
+            canShowInteractCrosshair = false;
         }
     }
 
@@ -45,6 +52,34 @@ public class InteractScript : MonoBehaviour
         if (canInteract && _Input.Interact)
         {
             print("interacted");
+        }
+    }
+
+    private void InteractShower()
+    {
+        RaycastHit showerHit;
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out showerHit,
+            RaycastDistance, showerLayer))
+        {
+            canShowInteractCrosshair = true;
+            canInteractWithShower = true;
+        }
+
+        if (canInteractWithShower && _Input.Interact)
+        {
+            hasInteractedWithShower = true;
+        }
+    }
+
+    private void ShowInteractCrosshair()
+    {
+        if (canShowInteractCrosshair)
+        {
+            interactCrossHair.SetActive(true);
+        }
+        else
+        {
+            interactCrossHair.SetActive(false);
         }
     }
 }
