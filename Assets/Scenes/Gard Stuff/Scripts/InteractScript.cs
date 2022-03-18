@@ -15,6 +15,8 @@ public class InteractScript : MonoBehaviour
     public GameObject interactCrossHair;
     private bool canShowInteractCrosshair;
     
+    private RaycastHit hit;
+    
     private bool canInteractWithShower;
     [HideInInspector]public bool hasInteractedWithShower;
 
@@ -42,7 +44,6 @@ public class InteractScript : MonoBehaviour
 
     private void DetectInteractable()
     {
-        RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, RaycastDistance, interactable))
         {
             canInteract = true;
@@ -60,6 +61,7 @@ public class InteractScript : MonoBehaviour
         if (canInteract && _Input.Interact)
         {
             print("interacted");
+            hit.transform.GetComponent<AnimationController>().Interacting();
         }
     }
 
