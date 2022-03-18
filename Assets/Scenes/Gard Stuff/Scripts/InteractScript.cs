@@ -9,18 +9,25 @@ public class InteractScript : MonoBehaviour
     [SerializeField] private float RaycastDistance = 10f;
     public LayerMask interactable;
     public LayerMask showerLayer;
+    public LayerMask TvLayer;
     private bool canInteract;
     public Input _Input;
     public GameObject interactCrossHair;
     private bool canShowInteractCrosshair;
+    
     private bool canInteractWithShower;
     [HideInInspector]public bool hasInteractedWithShower;
+
+    private bool canInteractWithTV;
+    [HideInInspector] public bool hasInteractedWithTV;
 
     private void Start()
     {
         canInteract = false;
         hasInteractedWithShower = false;
         canInteractWithShower = false;
+        canInteractWithTV = false;
+        hasInteractedWithTV = false;
         interactCrossHair.SetActive(false);
     }
 
@@ -30,6 +37,7 @@ public class InteractScript : MonoBehaviour
         Interact();
         InteractShower();
         ShowInteractCrosshair();
+        InteractTV();
     }
 
     private void DetectInteractable()
@@ -64,6 +72,10 @@ public class InteractScript : MonoBehaviour
             canShowInteractCrosshair = true;
             canInteractWithShower = true;
         }
+        else
+        {
+            canInteractWithShower = false;
+        }
 
         if (canInteractWithShower && _Input.Interact)
         {
@@ -80,6 +92,22 @@ public class InteractScript : MonoBehaviour
         else
         {
             interactCrossHair.SetActive(false);
+        }
+    }
+
+    private void InteractTV()
+    {
+        RaycastHit TVhit;
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward),out TVhit,RaycastDistance,TvLayer))
+        {
+            canInteractWithTV = true;
+            canShowInteractCrosshair = true;
+        }
+
+        if (canInteractWithTV && _Input.Interact)
+        {
+            hasInteractedWithTV = true;
+            print("has tv indeed");
         }
     }
 }
