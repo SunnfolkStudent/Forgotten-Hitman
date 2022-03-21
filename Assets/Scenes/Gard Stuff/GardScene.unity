@@ -461,7 +461,7 @@ MonoBehaviour:
   TriggerZone1: {fileID: 11366883}
   TriggerZone2: {fileID: 2104209539}
   AreYouOK: {fileID: 8300000, guid: 97e816edca758764092368edb40f8d73, type: 3}
-  BasementKeyGone: {fileID: 8300000, guid: fd95246dbf343e7488da88c35168497e, type: 3}
+  BasementKeyGone: {fileID: 8300000, guid: 97e816edca758764092368edb40f8d73, type: 3}
 --- !u!82 &415385446
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1081,7 +1081,7 @@ GameObject:
   - component: {fileID: 2104209540}
   m_Layer: 0
   m_Name: TriggerZone2
-  m_TagString: Untagged
+  m_TagString: TriggerZone2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

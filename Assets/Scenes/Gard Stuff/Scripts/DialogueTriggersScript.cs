@@ -21,6 +21,13 @@ public class DialogueTriggersScript : MonoBehaviour
         TriggerZone1.SetActive(true);
         TriggerZone2.SetActive(false);
         _AudioSource = GetComponent<AudioSource>();
+        hasTriggeredZone1 = false;
+        hasTriggeredZone2 = false;
+    }
+
+    private void Update()
+    {
+        TurnOffZones();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -29,11 +36,26 @@ public class DialogueTriggersScript : MonoBehaviour
         {
             _AudioSource.PlayOneShot(AreYouOK);
             TriggerZone2.SetActive(true);
+            hasTriggeredZone1 = true;
         }
 
         if (other.gameObject.tag == "TriggerZone2")
         {
             _AudioSource.PlayOneShot(BasementKeyGone);
+            hasTriggeredZone2 = true;
+        }
+    }
+
+    private void TurnOffZones()
+    {
+        if (hasTriggeredZone1)
+        {
+            TriggerZone1.SetActive(false);
+        }
+
+        if (hasTriggeredZone2)
+        {
+            TriggerZone2.SetActive(false);
         }
     }
 }
