@@ -44,9 +44,9 @@ GameObject:
   - component: {fileID: 4413966145666733230}
   - component: {fileID: 4413966145668027534}
   - component: {fileID: 4413966145669158478}
-  - component: {fileID: 282645718410022749}
   - component: {fileID: 4413966145666733228}
   - component: {fileID: 4413966145666733231}
+  - component: {fileID: 961819933656075896}
   m_Layer: 3
   m_Name: InteractiveFurniture12_02
   m_TagString: Untagged
@@ -119,20 +119,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &282645718410022749
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4413966145667156110}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 05a01ec596d60f94b912f5ee01827129, type: 3}
 --- !u!95 &4413966145666733228
 Animator:
   serializedVersion: 4
@@ -169,6 +155,19 @@ MonoBehaviour:
   - Idle
   - OpenDoorLeft
   - CloseDoorLeft
+--- !u!65 &961819933656075896
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4413966145667156110}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3969214, y: 0.5965912, z: 0.016762953}
+  m_Center: {x: 0.198, y: 0.00015863776, z: 0.0035210196}
 --- !u!1 &7378710087683076360
 GameObject:
   m_ObjectHideFlags: 0

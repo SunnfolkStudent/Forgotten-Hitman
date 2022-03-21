@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 667447105800519299}
   - component: {fileID: 667447105801846435}
   - component: {fileID: 667447105802943587}
-  - component: {fileID: 4562019817651195746}
   - component: {fileID: 667447105801846433}
   - component: {fileID: 667447105801846432}
+  - component: {fileID: 5567902892210528772}
   m_Layer: 3
   m_Name: InteractiveSink_01_Door1
   m_TagString: Untagged
@@ -86,20 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4562019817651195746
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 667447105800741539}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 101c3248bebafec45be826e9b7772f6f, type: 3}
 --- !u!114 &667447105801846433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +122,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &5567902892210528772
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 667447105800741539}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5542674, y: 0.8330897, z: 0.019934565}
+  m_Center: {x: -0.2699326, y: 0.41711134, z: 0.0027878135}
 --- !u!1 &1271057894561318123
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,9 +246,9 @@ GameObject:
   - component: {fileID: 5378667628136789555}
   - component: {fileID: 5378667628133365267}
   - component: {fileID: 5378667628134495443}
-  - component: {fileID: 6312483591165289558}
   - component: {fileID: 6312483591165289556}
   - component: {fileID: 6312483591165289559}
+  - component: {fileID: 8043091153046734565}
   m_Layer: 3
   m_Name: InteractiveSink_01_Door2
   m_TagString: Untagged
@@ -322,20 +321,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6312483591165289558
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5378667628136753683}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: ff213f6acecfd624d8099414e554a153, type: 3}
 --- !u!95 &6312483591165289556
 Animator:
   serializedVersion: 4
@@ -372,3 +357,16 @@ MonoBehaviour:
   - Idle
   - OpenDoorLeft
   - CloseDoorLeft
+--- !u!65 &8043091153046734565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5378667628136753683}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5542674, y: 0.8330897, z: 0.019934565}
+  m_Center: {x: 0.26993263, y: 0.41711134, z: 0.0027878135}
