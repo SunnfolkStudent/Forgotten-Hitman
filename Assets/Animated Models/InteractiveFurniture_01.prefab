@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 2562719095015361334}
   - component: {fileID: 2562719095018752790}
   - component: {fileID: 2562719095017785814}
-  - component: {fileID: 2867119176640836448}
   - component: {fileID: 2562719095018752789}
   - component: {fileID: 2562719095018752788}
+  - component: {fileID: 3938371963331100900}
+  - component: {fileID: 8228184767928511286}
   m_Layer: 3
   m_Name: InteractiveFurniture1_02
   m_TagString: Untagged
@@ -86,20 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2867119176640836448
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2562719095015855894}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 2a27065e6ff751f4d8d80e89c603ff36, type: 3}
 --- !u!95 &2562719095018752789
 Animator:
   serializedVersion: 4
@@ -136,6 +123,32 @@ MonoBehaviour:
   - Idle
   - OpenDrawer
   - CloseDrawer
+--- !u!65 &3938371963331100900
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2562719095015855894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3435534, y: 0.16370097, z: 0.016457956}
+  m_Center: {x: 0, y: 0, z: 0.0034031472}
+--- !u!65 &8228184767928511286
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2562719095015855894}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3435534, y: 0.0075808167, z: 0.27156302}
+  m_Center: {x: 0, y: -0.0780602, z: -0.13397303}
 --- !u!1 &3362743071568742100
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,9 +311,10 @@ GameObject:
   - component: {fileID: 4516454891495578297}
   - component: {fileID: 4516454891495578277}
   - component: {fileID: 4516454891495578278}
-  - component: {fileID: 4516454891495578279}
   - component: {fileID: 4516454891495578296}
   - component: {fileID: 4516454891495578276}
+  - component: {fileID: 1426829798035011302}
+  - component: {fileID: 6689014147174028325}
   m_Layer: 3
   m_Name: InteractiveFurniture1_02
   m_TagString: Untagged
@@ -373,20 +387,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4516454891495578279
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4516454891495578298}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: 2a27065e6ff751f4d8d80e89c603ff36, type: 3}
 --- !u!95 &4516454891495578296
 Animator:
   serializedVersion: 4
@@ -423,6 +423,32 @@ MonoBehaviour:
   - Idle
   - OpenDrawer
   - CloseDrawer
+--- !u!65 &1426829798035011302
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516454891495578298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3435534, y: 0.16370097, z: 0.016457956}
+  m_Center: {x: 0, y: 0, z: 0.0034031472}
+--- !u!65 &6689014147174028325
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4516454891495578298}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.3435534, y: 0.0075808167, z: 0.27156302}
+  m_Center: {x: 0, y: -0.0780602, z: -0.13397303}
 --- !u!1 &4516454891691938454
 GameObject:
   m_ObjectHideFlags: 0

@@ -143,9 +143,10 @@ GameObject:
   - component: {fileID: 4195845723099746987}
   - component: {fileID: 4195845723096846987}
   - component: {fileID: 4195845723097845835}
-  - component: {fileID: 5100002012892069771}
   - component: {fileID: 4195845723099778701}
   - component: {fileID: 4195845723099778700}
+  - component: {fileID: 7427154035107219703}
+  - component: {fileID: 6275176583830055840}
   m_Layer: 3
   m_Name: InteractiveFurniture3_03
   m_TagString: Untagged
@@ -218,20 +219,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5100002012892069771
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4195845723099778699}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 7bf9c41b2bebdd044ad07e5dd5809b4e, type: 3}
 --- !u!95 &4195845723099778701
 Animator:
   serializedVersion: 4
@@ -268,6 +255,32 @@ MonoBehaviour:
   - Idle
   - OpenDrawer2
   - CloseDrawer2
+--- !u!65 &7427154035107219703
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4195845723099778699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5666504, y: 0.034210294, z: 0.4806016}
+  m_Center: {x: 0.0003954172, y: -0.11458348, z: -0.24198303}
+--- !u!65 &6275176583830055840
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4195845723099778699}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5666504, y: 0.27197242, z: 0.032970667}
+  m_Center: {x: 0.0003954172, y: -0.003870964, z: -0.016663194}
 --- !u!1 &8053760970406125901
 GameObject:
   m_ObjectHideFlags: 0
@@ -343,9 +356,10 @@ GameObject:
   - component: {fileID: 8053760971827668888}
   - component: {fileID: 8053760971827668893}
   - component: {fileID: 8053760971827668892}
-  - component: {fileID: 8053760971827668891}
   - component: {fileID: 8053760971827668890}
   - component: {fileID: 8053760971827668889}
+  - component: {fileID: 9003063405750609828}
+  - component: {fileID: 9112875643935672925}
   m_Layer: 3
   m_Name: InteractiveFurniture3_03
   m_TagString: Untagged
@@ -418,20 +432,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8053760971827668891
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8053760971827668967}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 7bf9c41b2bebdd044ad07e5dd5809b4e, type: 3}
 --- !u!95 &8053760971827668890
 Animator:
   serializedVersion: 4
@@ -468,3 +468,29 @@ MonoBehaviour:
   - Idle
   - OpenDrawer2
   - CloseDrawer2
+--- !u!65 &9003063405750609828
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053760971827668967}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5666504, y: 0.034210294, z: 0.4806016}
+  m_Center: {x: 0.0003954172, y: -0.11458348, z: -0.24198303}
+--- !u!65 &9112875643935672925
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8053760971827668967}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5666504, y: 0.27197242, z: 0.032970667}
+  m_Center: {x: 0.0003954172, y: -0.003870964, z: -0.016663194}

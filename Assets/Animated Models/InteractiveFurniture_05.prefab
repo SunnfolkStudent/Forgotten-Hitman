@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 546169583317997933}
   - component: {fileID: 546169583321389389}
   - component: {fileID: 546169583320423309}
-  - component: {fileID: 2181664077682482200}
   - component: {fileID: 2181664077682482202}
   - component: {fileID: 2181664077682482201}
+  - component: {fileID: 6119080392398502486}
+  - component: {fileID: 6709127518234157848}
   m_Layer: 3
   m_Name: InteractiveFurniture5_02
   m_TagString: Untagged
@@ -86,20 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2181664077682482200
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 546169583318156621}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: bff86a951921f2645b9a79c7130c1104, type: 3}
 --- !u!95 &2181664077682482202
 Animator:
   serializedVersion: 4
@@ -136,6 +123,32 @@ MonoBehaviour:
   - Idle
   - OpenDrawer3
   - CloseDrawer3
+--- !u!65 &6119080392398502486
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546169583318156621}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4357623, y: 0.038963795, z: 0.36683956}
+  m_Center: {x: 0, y: -0.15936655, z: -0.18944849}
+--- !u!65 &6709127518234157848
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546169583318156621}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4357623, y: 0.32476625, z: 0.023619294}
+  m_Center: {x: 0, y: -0.016465336, z: -0.012740195}
 --- !u!1 &2626075481355769118
 GameObject:
   m_ObjectHideFlags: 0
@@ -341,9 +354,10 @@ GameObject:
   - component: {fileID: 6401651195180059598}
   - component: {fileID: 6401651195179289582}
   - component: {fileID: 6401651195178158382}
-  - component: {fileID: 2414321214460307427}
   - component: {fileID: 6401651195180059584}
   - component: {fileID: 6401651195180059599}
+  - component: {fileID: 6171504534655729498}
+  - component: {fileID: 4731303095248239997}
   m_Layer: 3
   m_Name: InteractiveFurniture5_04
   m_TagString: Untagged
@@ -416,20 +430,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2414321214460307427
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6401651195180357614}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: bff86a951921f2645b9a79c7130c1104, type: 3}
 --- !u!95 &6401651195180059584
 Animator:
   serializedVersion: 4
@@ -466,6 +466,32 @@ MonoBehaviour:
   - Idle
   - OpenDrawer3
   - CloseDrawer3
+--- !u!65 &6171504534655729498
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6401651195180357614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4357623, y: 0.32476625, z: 0.023619294}
+  m_Center: {x: 0, y: -0.016465336, z: -0.012740195}
+--- !u!65 &4731303095248239997
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6401651195180357614}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4357623, y: 0.038963795, z: 0.36683956}
+  m_Center: {x: 0, y: -0.15936655, z: -0.18944849}
 --- !u!1 &7098721897180547753
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,9 +538,10 @@ GameObject:
   - component: {fileID: 7338760400228579902}
   - component: {fileID: 7338760400229874206}
   - component: {fileID: 7338760400230873310}
-  - component: {fileID: 3103692094297712599}
   - component: {fileID: 7338760400229874192}
   - component: {fileID: 7338760400229874207}
+  - component: {fileID: 5609785210233170833}
+  - component: {fileID: 4535087764300249737}
   m_Layer: 3
   m_Name: InteractiveFurniture5_03
   m_TagString: Untagged
@@ -587,20 +614,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3103692094297712599
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7338760400228607518}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300002, guid: bff86a951921f2645b9a79c7130c1104, type: 3}
 --- !u!95 &7338760400229874192
 Animator:
   serializedVersion: 4
@@ -637,3 +650,29 @@ MonoBehaviour:
   - Idle
   - OpenDrawer3
   - CloseDrawer3
+--- !u!65 &5609785210233170833
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7338760400228607518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4357623, y: 0.32476625, z: 0.023619294}
+  m_Center: {x: 0, y: -0.016465336, z: -0.012740195}
+--- !u!65 &4535087764300249737
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7338760400228607518}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.4357623, y: 0.038963795, z: 0.36683956}
+  m_Center: {x: 0, y: -0.15936655, z: -0.18944849}

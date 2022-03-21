@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 82227251110547814}
   - component: {fileID: 82227251113447750}
   - component: {fileID: 82227251112317830}
-  - component: {fileID: 3464415889548126831}
   - component: {fileID: 82227251110382916}
   - component: {fileID: 82227251110382917}
+  - component: {fileID: 6627774374068433619}
+  - component: {fileID: 6443590846646464406}
   m_Layer: 3
   m_Name: InteractiveFurniture10_04
   m_TagString: Untagged
@@ -86,20 +87,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &3464415889548126831
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82227251110382918}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a8744dfdf0740bc4ea4ee0346693e29e, type: 3}
 --- !u!114 &82227251110382916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +123,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &6627774374068433619
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82227251110382918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.55426747, y: 0.013647914, z: 0.5342828}
+  m_Center: {x: 0.000000059604645, y: -0.07994282, z: -0.2980786}
+--- !u!65 &6443590846646464406
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82227251110382918}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.55426747, y: 0.20577455, z: 0.021735072}
+  m_Center: {x: 0.000000059604645, y: -0.002810657, z: -0.03683132}
 --- !u!1 &682464113366174442
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,9 +160,10 @@ GameObject:
   - component: {fileID: 682464113366079178}
   - component: {fileID: 682464113365309162}
   - component: {fileID: 682464113364177962}
-  - component: {fileID: 4944180950333624750}
   - component: {fileID: 4944180950333624748}
   - component: {fileID: 4944180950333624749}
+  - component: {fileID: 4151638909532277832}
+  - component: {fileID: 2445624859850903905}
   m_Layer: 3
   m_Name: InteractiveFurniture10_05
   m_TagString: Untagged
@@ -165,7 +179,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 682464113366174442}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.273, y: 0.74, z: 0.327}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -222,20 +236,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &4944180950333624750
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 682464113366174442}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: a8744dfdf0740bc4ea4ee0346693e29e, type: 3}
 --- !u!95 &4944180950333624748
 Animator:
   serializedVersion: 4
@@ -272,6 +272,32 @@ MonoBehaviour:
   - Idle
   - OpenDrawer4
   - CloseDrawer4
+--- !u!65 &4151638909532277832
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682464113366174442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.55426747, y: 0.20577455, z: 0.021735072}
+  m_Center: {x: 0.000000059604645, y: -0.002810657, z: -0.03683132}
+--- !u!65 &2445624859850903905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 682464113366174442}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.55426747, y: 0.013647914, z: 0.5342828}
+  m_Center: {x: 0.000000059604645, y: -0.07994282, z: -0.2980786}
 --- !u!1 &4331997147216165545
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,7 +386,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4331997148714146018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.273, y: 0.74, z: 0.327}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -411,9 +437,9 @@ GameObject:
   - component: {fileID: 5531224968868908805}
   - component: {fileID: 5531224968866008869}
   - component: {fileID: 5531224968867007973}
-  - component: {fileID: 2758299953683163466}
   - component: {fileID: 5531224968867007979}
   - component: {fileID: 5531224968867007972}
+  - component: {fileID: 5802629407025074707}
   m_Layer: 3
   m_Name: InteractiveFurniture10_03
   m_TagString: Untagged
@@ -486,20 +512,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2758299953683163466
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5531224968868942629}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: c7585f565d9ed0242a61f41a7e904d29, type: 3}
 --- !u!114 &5531224968867007979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -536,6 +548,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &5802629407025074707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5531224968868942629}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5542674, y: 0.6269593, z: 0.019872896}
+  m_Center: {x: 0.27631843, y: 0, z: 0.0026145913}
 --- !u!1 &6005530339537767804
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,9 +572,9 @@ GameObject:
   - component: {fileID: 6005530339537932636}
   - component: {fileID: 6005530339534508412}
   - component: {fileID: 6005530339535508412}
-  - component: {fileID: 5383652992449226713}
   - component: {fileID: 5383652992449226712}
   - component: {fileID: 5383652992449226719}
+  - component: {fileID: 7422441715826747998}
   m_Layer: 3
   m_Name: InteractiveFurniture10_02
   m_TagString: Untagged
@@ -622,20 +647,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5383652992449226713
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6005530339537767804}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0fd2f52c20f0f8048a01379fbf0b0804, type: 3}
 --- !u!95 &5383652992449226712
 Animator:
   serializedVersion: 4
@@ -672,6 +683,19 @@ MonoBehaviour:
   - Idle
   - OpenDoorRight
   - CloseDoorRight
+--- !u!65 &7422441715826747998
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6005530339537767804}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5542674, y: 0.62695926, z: 0.0198729}
+  m_Center: {x: -0.27631843, y: 0, z: 0.002614591}
 --- !u!1 &7844956251361599908
 GameObject:
   m_ObjectHideFlags: 0
