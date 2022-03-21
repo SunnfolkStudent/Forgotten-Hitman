@@ -10,8 +10,12 @@ public class VoicelineController : MonoBehaviour
     [SerializeField] private Collider livingRoomCollider;
     [SerializeField] private Collider bathCollider;
     [SerializeField] private Collider basementCollider;
+    
+    [SerializeField] private AudioSource livingRoomSource;
+    [SerializeField] private AudioSource phoneSource;
 
     private bool playedStart; //Makes sure the start voicelines are only played once
+    private bool playedBasement; //Makes sure the start voicelines are only played once
     private bool exitedBath; //Start random banter after player has exited the bathroom
     private bool exitedBasement; //Make sure no voicelines are played after player has exited the basement
 
@@ -33,15 +37,22 @@ public class VoicelineController : MonoBehaviour
         {
             print("Entered Living Room");
             
-            //Plays random banter if you've been in the bathroom
+            //Plays if entering living room for a second/third/more times
             if (playedStart && exitedBath)
             {
-                if (!_audio.isPlaying) PlayVoiceline(banterVoice[Random.Range(0, banterVoice.Length - 1)]);
+                //Plays key hinting
+                if (!playedBasement)
+                {
+                    PlayVoiceline(basementVoice, livingRoomSource);
+                    playedBasement = true;
+                }
+                //Plays random banter
+                else if (!_audio.isPlaying) PlayVoiceline(banterVoice[Random.Range(0, banterVoice.Length - 1)], livingRoomSource);
             }
             //Plays when you first enter the livingroom
             else if (!playedStart)
             {
-                PlayVoiceline(livingRoomVoice);
+                PlayVoiceline(livingRoomVoice, livingRoomSource);
                 playedStart = true;
             }
         }
@@ -57,14 +68,13 @@ public class VoicelineController : MonoBehaviour
         {
             print("Entered Basement");
             
-            PlayVoiceline();
             exitedBasement = true;
         }
     }
 
-    private void PlayVoiceline(AudioClip voiceline)
+    private void PlayVoiceline(AudioClip voiceline, AudioSource source)
     {
-        _audio.clip = voiceline;
-        _audio.Play();
+        source.clip = voiceline;
+        source.Play();
     }
 }
