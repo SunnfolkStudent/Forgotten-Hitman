@@ -152,4 +152,5 @@ public class InteractScript : MonoBehaviour
             print("has tv indeed");
         }
     }
+    
 }
