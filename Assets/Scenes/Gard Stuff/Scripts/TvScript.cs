@@ -10,7 +10,6 @@ public class TvScript : MonoBehaviour
     public AudioClip NewsSpeech;
     private AudioSource _AudioSource;
     private bool TVInteractFix;
-    private bool CanTurnOfTV;
     public Input _Input;
 
 
@@ -19,7 +18,6 @@ public class TvScript : MonoBehaviour
         _AudioSource = GetComponent<AudioSource>();
         NewsImage.SetActive(false);
         TVInteractFix = false;
-        CanTurnOfTV = false;
     }
 
     private void Update()
@@ -28,13 +26,8 @@ public class TvScript : MonoBehaviour
         {
             NewsImage.SetActive(true);
             _AudioSource.PlayOneShot(NewsSpeech);
-            CanTurnOfTV = true;
             TVInteractFix = true;
         }
-
-        if (CanTurnOfTV && _Input.Interact)
-        {
-            print("turning of");
-        }
+        
     }
 }
