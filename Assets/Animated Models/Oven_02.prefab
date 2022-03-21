@@ -110,9 +110,9 @@ GameObject:
   - component: {fileID: 7051428394864829428}
   - component: {fileID: 7051428394867696596}
   - component: {fileID: 7051428394866598164}
-  - component: {fileID: 5293077876163683459}
   - component: {fileID: 5293077876163683457}
   - component: {fileID: 5293077876163683456}
+  - component: {fileID: 6007217213859619324}
   m_Layer: 3
   m_Name: Oven_02_Door
   m_TagString: Untagged
@@ -186,20 +186,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5293077876163683459
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7051428394864672724}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 21b6256de769aa44da3b3f0ee76757c0, type: 3}
 --- !u!114 &5293077876163683457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,3 +222,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &6007217213859619324
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7051428394864672724}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6138377, y: 0.6820265, z: 0.027126826}
+  m_Center: {x: 0, y: 0.33484942, z: 0.0042612366}

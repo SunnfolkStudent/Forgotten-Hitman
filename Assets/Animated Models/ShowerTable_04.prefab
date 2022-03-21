@@ -111,9 +111,9 @@ GameObject:
   - component: {fileID: 3342179930747043719}
   - component: {fileID: 3342179930747813799}
   - component: {fileID: 3342179930748812647}
-  - component: {fileID: 5912299724968998986}
   - component: {fileID: 5912299724968998988}
   - component: {fileID: 5912299724968998987}
+  - component: {fileID: 4686451195746313633}
   m_Layer: 3
   m_Name: ShowerTable_04_Door1
   m_TagString: Untagged
@@ -186,20 +186,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5912299724968998986
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3342179930746807207}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 4b324317baf1f0b4bb888267e14a77fb, type: 3}
 --- !u!95 &5912299724968998988
 Animator:
   serializedVersion: 4
@@ -236,6 +222,19 @@ MonoBehaviour:
   - Idle
   - OpenDoorRight
   - CloseDoorRight
+--- !u!65 &4686451195746313633
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3342179930746807207}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5542674, y: 0.8330897, z: 0.01745516}
+  m_Center: {x: -0.2699326, y: 0.41711134, z: 0.0015481114}
 --- !u!1 &4038662260563854856
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,9 +246,9 @@ GameObject:
   - component: {fileID: 4038662260563434024}
   - component: {fileID: 4038662260562631176}
   - component: {fileID: 4038662260561664200}
-  - component: {fileID: 5259088918556252626}
   - component: {fileID: 5259088918556252628}
   - component: {fileID: 5259088918556252627}
+  - component: {fileID: 4364110365411654565}
   m_Layer: 3
   m_Name: ShowerTable_04_Door2
   m_TagString: Untagged
@@ -322,20 +321,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5259088918556252626
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4038662260563854856}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: e738d9da4b4c3cb4c98bde80ae20e2e3, type: 3}
 --- !u!95 &5259088918556252628
 Animator:
   serializedVersion: 4
@@ -372,3 +357,16 @@ MonoBehaviour:
   - Idle
   - OpenDoorLeft
   - CloseDoorLeft
+--- !u!65 &4364110365411654565
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4038662260563854856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5542674, y: 0.8330897, z: 0.01745516}
+  m_Center: {x: 0.26993263, y: 0.41711134, z: 0.0015481114}

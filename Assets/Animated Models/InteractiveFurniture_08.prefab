@@ -144,9 +144,9 @@ GameObject:
   - component: {fileID: 2753840568621203620}
   - component: {fileID: 2753840568618336388}
   - component: {fileID: 2753840568619434564}
-  - component: {fileID: 2064396928500269776}
   - component: {fileID: 2064396928500269778}
   - component: {fileID: 2064396928500269777}
+  - component: {fileID: 4098086847423836527}
   m_Layer: 3
   m_Name: InteractiveFurniture8_03
   m_TagString: Untagged
@@ -219,20 +219,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2064396928500269776
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2753840568621440132}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 97f1285da2b72204997cbc0b6d0af346, type: 3}
 --- !u!95 &2064396928500269778
 Animator:
   serializedVersion: 4
@@ -269,6 +255,19 @@ MonoBehaviour:
   - Idle
   - OpenDoorLeft
   - CloseDoorLeft
+--- !u!65 &4098086847423836527
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2753840568621440132}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78179705, y: 1.1553876, z: 0.18846683}
+  m_Center: {x: 0.390297, y: 0, z: -0.07227256}
 --- !u!1 &3069543428897694915
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,9 +441,9 @@ GameObject:
   - component: {fileID: 7090298214525116267}
   - component: {fileID: 7090298214526443339}
   - component: {fileID: 7090298214527409547}
-  - component: {fileID: 8262320906384786088}
   - component: {fileID: 8262320906384786090}
   - component: {fileID: 8262320906384786089}
+  - component: {fileID: 7454083772498828716}
   m_Layer: 3
   m_Name: InteractiveFurniture8_04
   m_TagString: Untagged
@@ -517,20 +516,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8262320906384786088
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7090298214525207371}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 58de1f44399e2cf459927351d93d9d17, type: 3}
 --- !u!114 &8262320906384786090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -567,3 +552,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &7454083772498828716
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7090298214525207371}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.7817951, y: 0.843433, z: 0.036488496}
+  m_Center: {x: 0.390296, y: 0, z: 0.003834594}

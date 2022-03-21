@@ -111,9 +111,9 @@ GameObject:
   - component: {fileID: 5510208109001737541}
   - component: {fileID: 5510208109004637541}
   - component: {fileID: 5510208109003638693}
-  - component: {fileID: 6838759831046831405}
   - component: {fileID: 6838759831046831403}
   - component: {fileID: 6838759831046831404}
+  - component: {fileID: 467904162013455763}
   m_Layer: 3
   m_Name: ShowerTable_03_Door1
   m_TagString: Untagged
@@ -186,20 +186,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6838759831046831405
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5510208109001382245}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 98cec2df7cadef4499a9dff54ae973f3, type: 3}
 --- !u!114 &6838759831046831403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +222,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &467904162013455763
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5510208109001382245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5542674, y: 0.8330897, z: 0.01745516}
+  m_Center: {x: -0.2699326, y: 0.41711134, z: 0.0015481114}
 --- !u!1 &6982200876900826053
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,9 +246,9 @@ GameObject:
   - component: {fileID: 6982200876901312485}
   - component: {fileID: 6982200876902115269}
   - component: {fileID: 6982200876903081221}
-  - component: {fileID: 2652786540717263484}
   - component: {fileID: 6982200876900826051}
   - component: {fileID: 6982200876900826052}
+  - component: {fileID: 7821234705932923931}
   m_Layer: 3
   m_Name: ShowerTable_03_Door2
   m_TagString: Untagged
@@ -322,20 +321,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &2652786540717263484
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6982200876900826053}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 1825788e96287ff4a86fde465a874f41, type: 3}
 --- !u!95 &6982200876900826051
 Animator:
   serializedVersion: 4
@@ -372,3 +357,16 @@ MonoBehaviour:
   - Idle
   - OpenDoorLeft
   - CloseDoorLeft
+--- !u!65 &7821234705932923931
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6982200876900826053}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5542674, y: 0.8330897, z: 0.01745516}
+  m_Center: {x: 0.26993263, y: 0.41711134, z: 0.0015481114}
