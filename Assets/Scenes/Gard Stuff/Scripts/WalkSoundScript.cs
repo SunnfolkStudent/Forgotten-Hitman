@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class WalkSoundScript : MonoBehaviour
@@ -9,19 +7,20 @@ public class WalkSoundScript : MonoBehaviour
     public AudioClip walkSFX;
 
     public Input _Input;
-    
-    
-    void Start()
-    {
-        
-    }
 
+    private void Start()
+    {
+        _AudioSource = GetComponent<AudioSource>();
+    }
 
     void Update()
     {
-        if (_Input.MoveVector > 0f)
+        if (_Input.MoveVector.magnitude > 0 && _AudioSource.isPlaying == false)
         {
-            
+            _AudioSource.pitch = Random.Range(0.8f, 1.1f);
+            _AudioSource.PlayOneShot(walkSFX);
         }
     }
+    
+    
 }
