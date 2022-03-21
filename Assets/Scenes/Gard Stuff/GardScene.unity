@@ -466,6 +466,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 849cc9c2512c3464e8cdcf0c7f663fdd, type: 3}
     - target: {fileID: 1225854174, guid: 9cfc51b3bcf27314fb0a8cb7dbb4bc89, type: 3}
+      propertyPath: keyUI
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225854174, guid: 9cfc51b3bcf27314fb0a8cb7dbb4bc89, type: 3}
       propertyPath: interactCrossHair
       value: 
       objectReference: {fileID: 283069596}
@@ -791,6 +795,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777614346317425174, guid: 911dbb58c7e391b4ab11fbc5e52eeaa3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -6.407898
+      objectReference: {fileID: 0}
+    - target: {fileID: 1777614346317425174, guid: 911dbb58c7e391b4ab11fbc5e52eeaa3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -11.271179
       objectReference: {fileID: 0}
     - target: {fileID: 1777614346317425175, guid: 911dbb58c7e391b4ab11fbc5e52eeaa3,
         type: 3}
