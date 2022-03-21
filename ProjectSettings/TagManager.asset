@@ -6,6 +6,9 @@ TagManager:
   tags:
   - TriggerZone1
   - TriggerZone2
+  - LivingRoom
+  - Bathroom
+  - Basement
   layers:
   - Default
   - TransparentFX

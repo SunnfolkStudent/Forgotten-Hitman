@@ -10,7 +10,6 @@ public class TvScript : MonoBehaviour
     public AudioClip NewsSpeech;
     private AudioSource _AudioSource;
     private bool TVInteractFix;
-    public Input _Input;
 
 
     private void Start()
