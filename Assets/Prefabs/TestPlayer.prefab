@@ -425,9 +425,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RaycastDistance: 3
-  interactable:
+  interactableLayer:
     serializedVersion: 2
     m_Bits: 8
+  pickupLayer:
+    serializedVersion: 2
+    m_Bits: 256
   showerLayer:
     serializedVersion: 2
     m_Bits: 64
@@ -436,5 +439,6 @@ MonoBehaviour:
     m_Bits: 128
   _Input: {fileID: 4780713370472060646}
   interactCrossHair: {fileID: 0}
+  keyUI: {fileID: 0}
   hasInteractedWithShower: 0
   hasInteractedWithTV: 0
