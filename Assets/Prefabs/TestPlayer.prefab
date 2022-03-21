@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 4780713370472060641}
   - component: {fileID: 4780713370472060640}
   - component: {fileID: 415385446}
-  - component: {fileID: 415385445}
   - component: {fileID: 415385447}
   m_Layer: 0
   m_Name: TestPlayer
@@ -150,6 +149,7 @@ MonoBehaviour:
   gravity: -13
   moveSpeed: 6
   _moveSmoothTime: 0
+  canMove: 0
 --- !u!114 &4780713370472060640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,22 +263,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &415385445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4780713370472060643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7cf64916d78dad8499d69b2cdef97b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TriggerZone1: {fileID: 0}
-  TriggerZone2: {fileID: 0}
-  AreYouOK: {fileID: 8300000, guid: 97e816edca758764092368edb40f8d73, type: 3}
-  BasementKeyGone: {fileID: 8300000, guid: 97e816edca758764092368edb40f8d73, type: 3}
 --- !u!114 &415385447
 MonoBehaviour:
   m_ObjectHideFlags: 0
