@@ -1,18 +1,19 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractScript : MonoBehaviour
 {
 
     [SerializeField] private float RaycastDistance = 10f;
-    public LayerMask interactable;
+    public LayerMask interactableLayer;
+    public LayerMask pickupLayer;
     public LayerMask showerLayer;
     public LayerMask TvLayer;
     private bool canInteract;
+    private bool canPickup;
+    private GameObject targetKey;
     public Input _Input;
     public GameObject interactCrossHair;
+    public GameObject keyUI;
     private bool canShowInteractCrosshair;
     
     private RaycastHit hit;
@@ -22,6 +23,8 @@ public class InteractScript : MonoBehaviour
 
     private bool canInteractWithTV;
     [HideInInspector] public bool hasInteractedWithTV;
+    
+    private bool hasKey;
 
     private void Start()
     {
@@ -31,6 +34,7 @@ public class InteractScript : MonoBehaviour
         canInteractWithTV = false;
         hasInteractedWithTV = false;
         interactCrossHair.SetActive(false);
+        keyUI.SetActive(false);
     }
 
     private void Update()
@@ -39,20 +43,39 @@ public class InteractScript : MonoBehaviour
         Interact();
         InteractShower();
         ShowInteractCrosshair();
+        ShowKeyUI();
         InteractTV();
+        Pickup();
     }
 
     private void DetectInteractable()
     {
-        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, RaycastDistance, interactable))
+        canInteract = false;
+        canShowInteractCrosshair = false;
+        targetKey = null;
+        
+        if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, RaycastDistance))
         {
-            canInteract = true;
-            canShowInteractCrosshair = true;
-        }
-        else
-        {
-            canInteract = false;
-            canShowInteractCrosshair = false;
+            if (hit.transform.gameObject.layer == LayerMask.NameToLayer("Interactable"))
+            {
+                canInteract = true;
+                canShowInteractCrosshair = true;
+            }
+            else if (hit.transform.gameObject.layer == LayerMask.NameToLayer("PickUp"))
+            {
+                print("Looking at key");
+                canPickup = true;
+                canShowInteractCrosshair = true;
+                targetKey = hit.transform.gameObject;
+            }
+            else if (hit.transform.gameObject.layer == LayerMask.NameToLayer("BasementDoor"))
+            {
+                if (hasKey)
+                {
+                    //TODO: Open basement door
+                    hasKey = false;
+                }
+            }
         }
     }
 
@@ -62,6 +85,16 @@ public class InteractScript : MonoBehaviour
         {
             print("interacted");
             hit.transform.GetComponent<AnimationController>().Interacting();
+        }
+    }
+
+    private void Pickup()
+    {
+        if (canPickup && _Input.Interact && targetKey != null)
+        {
+            Destroy(targetKey);
+            hasKey = true;
+            targetKey = null;
         }
     }
 
@@ -95,6 +128,12 @@ public class InteractScript : MonoBehaviour
         {
             interactCrossHair.SetActive(false);
         }
+    }
+
+    private void ShowKeyUI()
+    {
+        if (hasKey) keyUI.SetActive(true);
+        else keyUI.SetActive(false);
     }
 
     private void InteractTV()
