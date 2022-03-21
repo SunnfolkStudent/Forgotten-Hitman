@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class VoicelineController : MonoBehaviour
 {
-    
-    public AudioArray[] _voicelines;
-    
+    [SerializeField] private AudioClip livingRoomVoice;
+    [SerializeField] private AudioClip basementVoice;
+    [SerializeField] private AudioClip phoneVoice;
+    [SerializeField] private AudioClip[] banterVoice;
+
     [SerializeField] private Collider livingRoomCollider;
     [SerializeField] private Collider bathCollider;
     [SerializeField] private Collider basementCollider;
@@ -34,12 +36,12 @@ public class VoicelineController : MonoBehaviour
             //Plays random banter if you've been in the bathroom
             if (playedStart && exitedBath)
             {
-                if (!_audio.isPlaying) PlayVoiceline(_voicelines[1]._arrays[Random.Range(0, _voicelines[1]._arrays.Length - 1)]);
+                if (!_audio.isPlaying) PlayVoiceline(banterVoice[Random.Range(0, banterVoice.Length - 1)]);
             }
             //Plays when you first enter the livingroom
             else if (!playedStart)
             {
-                PlayVoiceline(_voicelines[0]._arrays[0]);
+                PlayVoiceline(livingRoomVoice);
                 playedStart = true;
             }
         }
@@ -55,7 +57,7 @@ public class VoicelineController : MonoBehaviour
         {
             print("Entered Basement");
             
-            PlayVoiceline(_voicelines[3]._arrays[0]);
+            PlayVoiceline();
             exitedBasement = true;
         }
     }
@@ -65,12 +67,4 @@ public class VoicelineController : MonoBehaviour
         _audio.clip = voiceline;
         _audio.Play();
     }
-}
-
-[System.Serializable]
-
-public class AudioArray
-{
-    public string name;
-    public AudioClip[] _arrays;
 }

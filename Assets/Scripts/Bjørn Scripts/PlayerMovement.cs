@@ -6,6 +6,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float moveSpeed = 6f;
     [SerializeField] [Range(0f, 1f)] private float _moveSmoothTime = 0.3f;
 
+    public bool canMove;
+
     private CharacterController _characterController;
     private Input _input;
 
@@ -21,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (!canMove) return;
         UpdateMovementSmooth();
     }
     
