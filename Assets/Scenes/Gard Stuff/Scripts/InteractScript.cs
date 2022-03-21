@@ -104,6 +104,7 @@ public class InteractScript : MonoBehaviour
         {
             canInteractWithTV = true;
             canShowInteractCrosshair = true;
+            interactCrossHair.SetActive(true);
         }
 
         if (canInteractWithTV && _Input.Interact)
