@@ -109,9 +109,9 @@ GameObject:
   - component: {fileID: 4130047990820580219}
   - component: {fileID: 4130047990819285851}
   - component: {fileID: 4130047990818154907}
-  - component: {fileID: 64859348733771108}
   - component: {fileID: 504505261}
   - component: {fileID: 504505260}
+  - component: {fileID: 5289400160603423740}
   m_Layer: 7
   m_Name: TV
   m_TagString: Untagged
@@ -185,20 +185,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64859348733771108
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4130047990820419419}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 0c3cf091dace4b440a524e84d79dee50, type: 3}
 --- !u!82 &504505261
 AudioSource:
   m_ObjectHideFlags: 0
@@ -310,4 +296,16 @@ MonoBehaviour:
   _InteractScript: {fileID: 0}
   NewsImage: {fileID: 1558799675}
   NewsSpeech: {fileID: 8300000, guid: 8a00145fbc4f15142b0f3860ca4eba41, type: 3}
-  _Input: {fileID: 0}
+--- !u!65 &5289400160603423740
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4130047990820419419}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3968315, y: 0.85758317, z: 0.04146582}
+  m_Center: {x: 0, y: 0.5497682, z: 0.0045014033}
