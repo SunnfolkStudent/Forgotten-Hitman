@@ -14,6 +14,7 @@ public class InteractScript : MonoBehaviour
     private GameObject targetKey;
     public Input _Input;
     public GameObject interactCrossHair;
+    public GameObject crossHair;
     public GameObject keyUI;
     private bool canShowInteractCrosshair;
     
@@ -24,6 +25,10 @@ public class InteractScript : MonoBehaviour
 
     private bool canInteractWithTV;
     [HideInInspector] public bool hasInteractedWithTV;
+
+    [SerializeField] private AudioClip _pickupAudio;
+    [SerializeField] private AudioClip _unlockAudio;
+    private AudioSource _Source;
     
     private bool hasKey;
 
@@ -35,7 +40,10 @@ public class InteractScript : MonoBehaviour
         canInteractWithTV = false;
         hasInteractedWithTV = false;
         interactCrossHair.SetActive(false);
+        crossHair.SetActive(true);
         keyUI.SetActive(false);
+
+        _Source = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -99,6 +107,8 @@ public class InteractScript : MonoBehaviour
             hit.transform.gameObject.layer = LayerMask.NameToLayer("Interactable");
             hit.transform.GetComponent<AnimationController>().Interacting();
             hasKey = false;
+            
+            _Source.PlayOneShot(_unlockAudio);
         }
     }
 
@@ -109,6 +119,7 @@ public class InteractScript : MonoBehaviour
             Destroy(targetKey);
             hasKey = true;
             targetKey = null;
+            _Source.PlayOneShot(_pickupAudio);
         }
     }
 
@@ -137,10 +148,12 @@ public class InteractScript : MonoBehaviour
         if (canShowInteractCrosshair)
         {
             interactCrossHair.SetActive(true);
+            crossHair.SetActive(false);
         }
         else
         {
             interactCrossHair.SetActive(false);
+            crossHair.SetActive(true);
         }
     }
 
