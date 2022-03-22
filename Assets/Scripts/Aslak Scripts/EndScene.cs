@@ -7,6 +7,9 @@ using UnityEngine.SceneManagement;
 public class EndScene : MonoBehaviour
 {
     public Animator TheEnd;
+
+    public Animator FadeInRestart;
+    public Animator FadeInQuit;
     private void Awake()
     {
         TheEnd.Play("TheEndFadeIn");
@@ -20,5 +23,11 @@ public class EndScene : MonoBehaviour
     public void ExitGame()
     {
         Application.Quit();
+    }
+
+    public void ÆShowButtons()
+    {
+      FadeInQuit.Play("FadeInButtons");
+      
     }
 }
