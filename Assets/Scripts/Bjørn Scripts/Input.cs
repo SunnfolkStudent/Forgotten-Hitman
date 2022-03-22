@@ -7,6 +7,7 @@ public class Input : MonoBehaviour
     public Vector2 MoveVector { get; private set; }
     public Vector2 LookVector { get; private set; }
     public bool Interact { get; private set; }
+    public bool ExitGame { get; private set; }
 
     #region InputSetup
     
@@ -32,7 +33,8 @@ public class Input : MonoBehaviour
         MoveVector = _input.Player.Move.ReadValue<Vector2>();
         LookVector = _input.Player.Look.ReadValue<Vector2>();
         Interact = _input.Player.Interact.triggered;
-        
+        ExitGame = _input.Player.ExitGame.triggered;
+
         if (Interact) print("pressed interact");
     }
 }
