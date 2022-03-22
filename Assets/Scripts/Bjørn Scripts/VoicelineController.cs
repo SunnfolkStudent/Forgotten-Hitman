@@ -72,7 +72,7 @@ public class VoicelineController : MonoBehaviour
                     playedBasement = true;
                 }
                 //Plays random banter
-                else if (!_audio.isPlaying) PlayVoiceline(banterVoice[Random.Range(0, banterVoice.Length - 1)], livingRoomSource);
+                else if (!livingRoomSource.isPlaying) PlayVoiceline(banterVoice[Random.Range(0, banterVoice.Length - 1)], livingRoomSource);
             }
             //Plays when you first enter the livingroom
             else if (!playedStart)
