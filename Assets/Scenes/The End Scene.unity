@@ -426,6 +426,7 @@ GameObject:
   - component: {fileID: 996803091}
   - component: {fileID: 996803090}
   - component: {fileID: 996803092}
+  - component: {fileID: 996803093}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -571,6 +572,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &996803093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 996803088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d16e2735426b8304abe5c1690a19b1f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TheEnd: {fileID: 996803092}
+  FadeInRestart: {fileID: 1907634931}
+  FadeInQuit: {fileID: 1306436224}
 --- !u!1 &1070390777
 GameObject:
   m_ObjectHideFlags: 0
