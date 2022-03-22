@@ -46,14 +46,19 @@ public class FadeScreenScript : MonoBehaviour
         
     }
     
-    private void FadeIn()
+    public void FadeIn()
     {
         FadeScreen.GetComponent<Animation>().Play("Fade Animation");
     }
 
-    private void FadeOut()
+    public void FadeOut()
     {
         FadeOutScreen.GetComponent<Animation>().Play("FadeOutAnimation");
+    }
+    
+    public void FadeOutLoadEnd()
+    {
+        FadeScreen.GetComponent<Animation>().Play("FadeOutAnimationLoadEnd");
     }
 
     private void ShowerFadeFix()
