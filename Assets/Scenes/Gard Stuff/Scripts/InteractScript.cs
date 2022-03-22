@@ -64,6 +64,7 @@ public class InteractScript : MonoBehaviour
         canInteract = false;
         canUnlock = false;
         canShowInteractCrosshair = false;
+        canInteractWithTV = false;
         targetKey = null;
         
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, RaycastDistance))
