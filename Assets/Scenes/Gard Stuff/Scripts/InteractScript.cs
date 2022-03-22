@@ -9,6 +9,7 @@ public class InteractScript : MonoBehaviour
     public LayerMask showerLayer;
     public LayerMask TvLayer;
     private bool canInteract;
+    private bool canUnlock;
     private bool canPickup;
     private GameObject targetKey;
     public Input _Input;
@@ -41,6 +42,7 @@ public class InteractScript : MonoBehaviour
     {
         DetectInteractable();
         Interact();
+        Unlock();
         InteractShower();
         ShowInteractCrosshair();
         ShowKeyUI();
@@ -50,7 +52,9 @@ public class InteractScript : MonoBehaviour
 
     private void DetectInteractable()
     {
+        //Resets temporary variables
         canInteract = false;
+        canUnlock = false;
         canShowInteractCrosshair = false;
         targetKey = null;
         
@@ -72,8 +76,8 @@ public class InteractScript : MonoBehaviour
             {
                 if (hasKey)
                 {
-                    //TODO: Open basement door
-                    hasKey = false;
+                    canUnlock = true;
+                    canShowInteractCrosshair = true;
                 }
             }
         }
@@ -85,6 +89,16 @@ public class InteractScript : MonoBehaviour
         {
             print("interacted");
             hit.transform.GetComponent<AnimationController>().Interacting();
+        }
+    }
+
+    private void Unlock()
+    {
+        if (canUnlock && _Input.Interact)
+        {
+            hit.transform.gameObject.layer = LayerMask.NameToLayer("Interactable");
+            hit.transform.GetComponent<AnimationController>().Interacting();
+            hasKey = false;
         }
     }
 

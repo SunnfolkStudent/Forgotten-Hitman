@@ -8,6 +8,8 @@ public class PlayerLook : MonoBehaviour
     [SerializeField] private float mouseSensitivityY = 25f;
     [SerializeField] [Range(0f, 0.5f)] private float mouseSmoothTime = 0.03f;
 
+    public bool canLook;
+
     private Vector2 _currentMouseDelta = Vector2.zero;
     private Vector2 _currentMouseVelocity = Vector2.zero;
 
@@ -23,6 +25,8 @@ public class PlayerLook : MonoBehaviour
 
     private void Update()
     {
+        if (!canLook) return;
+        
         MouseLookAdvanced();
     }
 
