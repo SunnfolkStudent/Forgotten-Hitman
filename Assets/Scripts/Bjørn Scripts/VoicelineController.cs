@@ -14,6 +14,8 @@ public class VoicelineController : MonoBehaviour
     [SerializeField] private AudioSource livingRoomSource;
     [SerializeField] private AudioSource phoneSource;
 
+    [SerializeField] private InteractScript _interact;
+
     private bool playedStart; //Makes sure the start voicelines are only played once
     private bool playedBasement; //Makes sure the start voicelines are only played once
     private bool exitedBath; //Start random banter after player has exited the bathroom
@@ -38,7 +40,7 @@ public class VoicelineController : MonoBehaviour
             print("Entered Living Room");
             
             //Plays if entering living room for a second/third/more times
-            if (playedStart && exitedBath)
+            if (playedStart && _interact.hasInteractedWithShower)
             {
                 //Plays key hinting
                 if (!playedBasement)
@@ -55,13 +57,6 @@ public class VoicelineController : MonoBehaviour
                 PlayVoiceline(livingRoomVoice, livingRoomSource);
                 playedStart = true;
             }
-        }
-        //Entered Bathroom
-        else if (other.CompareTag(bathCollider.tag))
-        {
-            print("Entered Bathroom");
-
-            exitedBath = true;
         }
         //Entered Basement
         else if (other.CompareTag(basementCollider.tag))
