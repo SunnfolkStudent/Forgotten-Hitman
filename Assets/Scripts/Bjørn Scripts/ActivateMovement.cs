@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ActivateMovement : MonoBehaviour
 {
@@ -23,5 +24,10 @@ public class ActivateMovement : MonoBehaviour
     private void LockSight()
     {
         _Look.canLook = false;
+    }
+
+    public void GoToEndScene()
+    {
+        SceneManager.LoadScene("The End Scene");
     }
 }
